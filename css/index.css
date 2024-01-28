@@ -272,6 +272,72 @@ body{
     font-weight:500;
     color: rgb(255, 255, 255,.8);
 }
+.header-content .thirdline{
+    z-index: 2;
+    font-size: 30px;
+    padding-top:20px ;
+    font-weight:500;
+    color: rgb(255, 255, 255,.8);
+}
+.header-content .thirdline .download-cv{
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 10px 20px;
+    background:transparent;
+    color:#01ffbb;
+    transition: all .4s ease;
+    outline: none;
+    margin: 20px;
+    /* border: 1.5px solid #01ffbb; */
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+.header-content .thirdline .download-cv button{
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 10px 20px;
+    background:transparent;
+    color:#01ffbb;
+    transition: all .4s ease;
+    outline: none;
+    margin: 20px;
+    border: 1.5px solid #01ffbb;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+.header-content .thirdline .download-cv button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #01ffbb;
+    transition: all .7s ease;
+}
+.header-content .thirdline .download-cv button:hover{
+    opacity: 1;
+    color:whitesmoke;
+}
+ button:hover .index{
+     position: relative;
+    z-index: 4;
+}
+.header-content .thirdline .download-cv button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+
 .slash{
     animation-name: animateslash;
     animation-duration: .8s;

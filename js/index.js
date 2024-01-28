@@ -201,3 +201,22 @@ $(function () {
   $("a").hover(cursorhover, cursor);
   $(".navigation-close").hover(cursorhover, cursor);
 });
+
+function descargarPDF() {
+  // Ruta al archivo PDF en tu directorio
+  const rutaPDF = "../CV Heyner Hernández.pdf";
+
+  // Crear un enlace (link) para la descarga
+  const enlaceDescarga = document.createElement("a");
+  enlaceDescarga.href = rutaPDF;
+  enlaceDescarga.download = "CV_Heyner Hernández.pdf";
+
+  // Añadir el enlace al documento
+  document.body.appendChild(enlaceDescarga);
+
+  // Simular un clic en el enlace para iniciar la descarga
+  enlaceDescarga.click();
+
+  // Eliminar el enlace del documento
+  document.body.removeChild(enlaceDescarga);
+}
